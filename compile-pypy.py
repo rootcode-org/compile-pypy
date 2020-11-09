@@ -37,4 +37,4 @@ subprocess.call(["python", "../../rpython/bin/rpython", "--opt=jit", "targetpypy
 os.chdir("../tool/release")
 archive_name = version + "-amzn2"
 target_dir = os.path.expanduser("~")
-subprocess.call(["python", "package.py", "--targetdir", target_dir, "--archive-name", archive_name, "--without-tk"])
+subprocess.call(["python", "package.py", "--targetdir", target_dir, "--archive-name", archive_name])
